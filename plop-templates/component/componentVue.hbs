@@ -1,0 +1,28 @@
+<template>
+  <div>
+    <!-- 布局 -->
+  </div>
+</template>
+
+<script lang="ts" setup>
+  import { onMounted, ref, watchEffect } from 'vue';
+  const emits = defineEmits(['onSelectItem']);
+  const props = defineProps({
+    dataSource: {
+      type: () => [],
+      default: [],
+    }
+  });
+
+  watchEffect(() => {
+  });
+
+  onMounted(() => {
+  });
+
+  defineExpose({ });
+</script>
+
+<style lang="less" scoped>
+
+</style>
