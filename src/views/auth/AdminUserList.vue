@@ -124,12 +124,8 @@
   };
   const { queryParam, table, loadDataFn, searchFn, resetFn, handleAddFn, handleEditFn, handleDeleteFn, onChangeStatus } =
     useSTable(getAdminUserList, params, deleteUser);
-  const loadData = loadDataFn(() => {
-    console.log('[666]');
-  });
-  const search = searchFn(() => {
-    alert('查询结束')
-  });
+  const loadData = loadDataFn();
+  const search = searchFn();
   const reset = resetFn();
   const handleDelete = handleDeleteFn();
   const handleAdd = handleAddFn('AdminUserDetail');
